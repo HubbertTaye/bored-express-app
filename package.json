@@ -1,0 +1,22 @@
+{
+  "name": "bored_express_app",
+  "version": "1.0.0",
+  "description": "This api will generate a random activity for the user to do when bored depending on the general type they enter.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "bored": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.2",
+    "mongoose": "^5.4.20"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

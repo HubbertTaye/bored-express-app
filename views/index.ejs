@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Bored?</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <section class="main">
+      <h1>Bored? Lets find you something to do!</h1>
+      <form action="/activity" method="">
+        <label for="genres">Choose a genre:</label>
+        <select id="genres">
+          <option value="">Please choose an option</option>
+          <option value="education">education</option>
+          <option value="busywork">busywork</option>
+          <option value="social">social</option>
+          <option value="music">music</option>
+          <option value="relaxation">relaxation</option>
+          <option value="cooking">cooking</option>
+          <option value="charity">charity</option>
+          <option value="DIY">DIY</option>
+        </select>
+        <button id="randAct" type="button" name="">Gimme Activity</button>
+        <button id="save" type="button" name="save">Add to Favorites</button>
+      </form>
+      <section>
+        <p></p>
+        <h3>Favorites</h3>
+        <ul class="acts">
+          <% for(var i=0; i<activity.length; i++) {%>
+          <li class="act">
+            <span><%= activity[i].activity %></span>
+          </li>
+          <% } %>
+        </ul>
+      </section>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
